@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>YM321 — Casino & iGaming Platform Source | BC System Preview</title>
+  <meta name="description" content="Online casino & sports betting platform source code. AG, PG, EVO, SABA pre-integrated. H5 + PC + App + Agent system. 娱乐平台源码, BC系统, white label casino." />
+  <meta name="keywords" content="casino source code,betting platform,iGaming,BC system,娱乐平台源码,BC系统源码,AG接口,PG电子,white label casino,ym321" />
+  <meta property="og:title" content="YM321 — Casino Platform Source Preview" />
+  <meta property="og:description" content="Turnkey iGaming / BC system — 30+ providers, 10+ skins, launch in 7 days." />
+  <meta property="og:image" content="assets/skins/phone/KY1.png" />
+  <link rel="icon" href="assets/logo.png" />
+  <style>
+    :root {
+      --bg: #0a0a0f;
+      --card: #14141f;
+      --gold: #d4af37;
+      --gold-light: #f0d060;
+      --text: #e8e8ef;
+      --muted: #8888a0;
+      --border: #2a2a3a;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    a { color: var(--gold-light); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+    header {
+      text-align: center;
+      padding: 48px 20px 32px;
+      border-bottom: 1px solid var(--border);
+    }
+    header img.logo { width: 100px; margin-bottom: 16px; }
+    header h1 {
+      font-size: clamp(1.4rem, 4vw, 2rem);
+      background: linear-gradient(135deg, var(--gold), var(--gold-light));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 8px;
+    }
+    header p { color: var(--muted); max-width: 640px; margin: 0 auto 24px; }
+    .cta-row { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+    .btn {
+      display: inline-block;
+      padding: 10px 22px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+    .btn:hover { transform: translateY(-1px); text-decoration: none; }
+    .btn-gold { background: linear-gradient(135deg, #b8860b, var(--gold-light)); color: #1a1a1a; }
+    .btn-outline { border: 1px solid var(--gold); color: var(--gold-light); }
+    .btn-tg { background: #0088cc; color: #fff; }
+    .btn-wa { background: #25D366; color: #fff; }
+    .hero { padding: 32px 0; text-align: center; }
+    .hero-phones {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      gap: 0;
+      min-height: 420px;
+      padding: 0 10px;
+    }
+    .hero-phones img {
+      width: clamp(140px, 22vw, 220px);
+      border-radius: 18px;
+      border: 2px solid var(--border);
+      box-shadow: 0 16px 48px rgba(0,0,0,0.55);
+      background: #111;
+    }
+    .hero-phones img:nth-child(1) { transform: rotate(-10deg) translate(24px, 12px); z-index: 1; }
+    .hero-phones img:nth-child(2) { transform: scale(1.06); z-index: 3; }
+    .hero-phones img:nth-child(3) { transform: rotate(10deg) translate(-24px, 12px); z-index: 2; }
+    .hero-caption { color: var(--muted); font-size: 0.9rem; margin-top: 8px; }
+    section { padding: 40px 0; }
+    section h2 {
+      font-size: 1.4rem;
+      color: var(--gold);
+      margin-bottom: 8px;
+      text-align: center;
+    }
+    section .sub { text-align: center; color: var(--muted); margin-bottom: 28px; font-size: 0.95rem; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+    }
+    .card img { width: 100%; display: block; }
+    .card .label { padding: 10px; font-size: 0.85rem; color: var(--muted); }
+    .card .label b { color: var(--text); display: block; margin-bottom: 2px; }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 16px;
+      margin-top: 8px;
+    }
+    .feat {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px;
+    }
+    .feat h3 { color: var(--gold-light); font-size: 0.95rem; margin-bottom: 6px; }
+    .feat p { font-size: 0.85rem; color: var(--muted); }
+    .keywords {
+      text-align: center;
+      font-size: 0.78rem;
+      color: var(--muted);
+      padding: 32px 0;
+      border-top: 1px solid var(--border);
+      line-height: 1.8;
+    }
+    footer {
+      text-align: center;
+      padding: 24px;
+      color: var(--muted);
+      font-size: 0.85rem;
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <img class="logo" src="assets/logo.png" alt="YM321" />
+    <h1>YM321 Casino & Sports Betting Platform</h1>
+    <p>
+      Turnkey <strong>iGaming / BC system source</strong> — live casino, slots, sportsbook, lottery.
+      AG · PG · EVO · SABA pre-integrated. PC + H5 + App + Agent. Launch in 7 days.
+    </p>
+    <div class="cta-row">
+      <a class="btn btn-gold" href="https://ym321.com/en/demo/?utm_source=github&utm_medium=pages&utm_campaign=platform">Live Demo</a>
+      <a class="btn btn-tg" href="https://t.me/ym321com">Telegram @ym321com</a>
+      <a class="btn btn-wa" href="https://wa.me/ym321com?text=Hi%2C%20I%27m%20interested%20in%20the%20YM321%20casino%20platform.">WhatsApp</a>
+      <a class="btn btn-outline" href="https://ym321.com/en/contact/?utm_source=github&utm_medium=pages">ym321.com</a>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="hero">
+    <div class="hero-phones">
+      <img src="assets/skins/phone/KY1.png" alt="Classic Light H5 casino skin" />
+      <img src="assets/skins/phone/FSB1.png" alt="FSB Dark H5 casino skin" />
+      <img src="assets/skins/phone/FSB2.png" alt="FSB Sports H5 betting skin" />
+    </div>
+    <p class="hero-caption">H5 mobile skins — Classic · Dark Premium · Sportsbook</p>
+  </div>
+
+  <section>
+    <h2>What's Included</h2>
+    <p class="sub">Complete online casino & betting platform — not open source, commercial license</p>
+    <div class="features">
+      <div class="feat"><h3>Live Casino</h3><p>AG, EVO, SA, WM — baccarat, roulette, sic bo</p></div>
+      <div class="feat"><h3>Slots / Electronic</h3><p>PG, CQ9, JDB, PP — 1000+ slot games</p></div>
+      <div class="feat"><h3>Sportsbook</h3><p>SABA, IM — pre-match & live betting</p></div>
+      <div class="feat"><h3>Agent System</h3><p>Multi-tier affiliate, commission settlement</p></div>
+      <div class="feat"><h3>Payments</h3><p>USDT, bank cards, aggregator gateways</p></div>
+      <div class="feat"><h3>10+ UI Skins</h3><p>Dark, light, sports themes — white label ready</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Mobile H5 Skins</h2>
+    <p class="sub">Casino & sports betting mobile interfaces</p>
+    <div class="grid">
+      <div class="card"><img src="assets/skins/phone/KY1.png" alt="Classic Light H5 casino" loading="lazy" /><div class="label"><b>Classic Light</b>Default · slots lobby</div></div>
+      <div class="card"><img src="assets/skins/phone/FSB1.png" alt="FSB Dark H5 casino" loading="lazy" /><div class="label"><b>FSB Dark</b>Dark premium</div></div>
+      <div class="card"><img src="assets/skins/phone/FSB2.png" alt="FSB Sports H5" loading="lazy" /><div class="label"><b>FSB Sports</b>Sportsbook theme</div></div>
+      <div class="card"><img src="assets/skins/phone/KY2.png" alt="Blue White H5" loading="lazy" /><div class="label"><b>Blue White</b>Light minimal</div></div>
+      <div class="card"><img src="assets/skins/phone/OB1.png" alt="Sports Hub H5" loading="lazy" /><div class="label"><b>Sports Hub</b>Sports + casino</div></div>
+      <div class="card"><img src="assets/skins/phone/YY2.png" alt="Game Grid H5" loading="lazy" /><div class="label"><b>Game Grid</b>Slots grid</div></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Desktop PC Skins</h2>
+    <p class="sub">Full-width casino & sportsbook layouts</p>
+    <div class="grid">
+      <div class="card"><img src="assets/skins/pc/MS01.jpg" alt="Black Gold PC casino" loading="lazy" /><div class="label"><b>Black Gold PC</b>Luxury dark</div></div>
+      <div class="card"><img src="assets/skins/pc/MS02.jpg" alt="Dark Classic PC" loading="lazy" /><div class="label"><b>Dark Classic PC</b>Dark theme</div></div>
+      <div class="card"><img src="assets/skins/pc/VIP1.jpg" alt="Light VIP PC" loading="lazy" /><div class="label"><b>Light VIP PC</b>Premium light</div></div>
+      <div class="card"><img src="assets/skins/pc/OB.jpg" alt="Sports PC" loading="lazy" /><div class="label"><b>Sports PC</b>Sportsbook</div></div>
+      <div class="card"><img src="assets/skins/pc/JS.jpg" alt="Events PC" loading="lazy" /><div class="label"><b>Events PC</b>Match events</div></div>
+      <div class="card"><img src="assets/skins/pc/VIP4.jpg" alt="Blue White PC" loading="lazy" /><div class="label"><b>Blue White PC</b>Clean light</div></div>
+    </div>
+  </section>
+
+  <section style="text-align:center;padding-bottom:48px">
+    <h2>Get Demo & Quote</h2>
+    <p class="sub">10+ more themes · custom VI design · source license or managed setup</p>
+    <div class="cta-row">
+      <a class="btn btn-tg" href="https://t.me/ym321com">Telegram @ym321com</a>
+      <a class="btn btn-wa" href="https://wa.me/ym321com">WhatsApp</a>
+      <a class="btn btn-gold" href="https://ym321.com/en/demo/">Online Demo</a>
+    </div>
+  </section>
+
+  <div class="keywords">
+    casino source code · betting platform · iGaming · BC system · white label casino · sportsbook source ·
+    AG gaming · PG slots · agent system · 娱乐平台源码 · BC系统源码 · 博彩系统源码 · AG接口 · PG电子 · 代理系统 · ym321
+  </div>
+</div>
+
+<footer>
+  <p>© YM321 — Product showcase only, not open source. <a href="../README.md">GitHub README</a></p>
+</footer>
+
+</body>
+</html>

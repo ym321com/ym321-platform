@@ -18,15 +18,17 @@
   <a href="https://t.me/ym321com">
     <img src="https://img.shields.io/badge/Telegram-@ym321com-0088cc?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram" />
   </a>
-  <a href="https://wa.me/ym321com?text=Hi%2C%20I%27m%20interested%20in%20the%20YM321%20platform.">
+  <a href="https://wa.me/601128730884?text=Hi%2C%20I%27m%20interested%20in%20the%20YM321%20platform.">
     <img src="https://img.shields.io/badge/WhatsApp-咨询-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp" />
   </a>
 </p>
 
 <p align="center">
-  <a href="./docs/index.html"><b>📱 完整截图画廊（GitHub Pages）</b></a>
-  ·
-  <a href="./README.md">English</a>
+  <a href="https://ym321.com/zh/?utm_source=gitlab&utm_medium=readme"><b>🌐 官方网站：ym321.com</b></a>
+  · <a href="https://ym321.com/zh/demo/?utm_source=gitlab&utm_medium=readme">在线演示</a>
+  · <a href="https://ym321.com/zh/contact/?utm_source=gitlab&utm_medium=readme">联系我们</a>
+  · <a href="./docs/index.html"><b>截图画廊</b></a>
+  · <a href="./README.md">English</a>
 </p>
 
 <p align="center">
@@ -122,12 +124,13 @@
 
 ## 联系我们
 
-| 渠道 | 链接 |
+| 渠道 | 操作 |
 |------|------|
-| **Telegram** | [@ym321com](https://t.me/ym321com) |
-| **WhatsApp** | [点击咨询](https://wa.me/ym321com?text=Hi%2C%20I%27m%20interested%20in%20the%20YM321%20platform.) |
-| **官网** | [ym321.com/contact](https://ym321.com/zh/contact/?utm_source=gitlab&utm_medium=readme) |
-| **在线演示** | [ym321.com/demo](https://ym321.com/zh/demo/?utm_source=gitlab&utm_medium=readme) |
+| **官方网站** | [ym321.com](https://ym321.com/zh/?utm_source=gitlab&utm_medium=readme) · [在线演示](https://ym321.com/zh/demo/?utm_source=gitlab&utm_medium=readme) · [联系我们](https://ym321.com/zh/contact/?utm_source=gitlab&utm_medium=readme) |
+| **Telegram** | [@ym321com →](https://t.me/ym321com) |
+| **WhatsApp** | [WhatsApp 咨询 →](https://wa.me/601128730884?text=Hi%2C%20I%27m%20interested%20in%20the%20YM321%20platform.) |
+
+> 🌐 **完整产品介绍、演示与报价：** [https://ym321.com](https://ym321.com/zh/?utm_source=gitlab&utm_medium=readme)
 
 <!-- 二期：QQ / 微信 -->
 
@@ -170,7 +173,7 @@ Copyright © YM321. **保留所有权利。**
 ---
 
 <p align="center">
-  <a href="https://t.me/ym321com">Telegram</a> ·
-  <a href="https://wa.me/ym321com">WhatsApp</a> ·
+  <a href="https://t.me/ym321com">Telegram @ym321com</a> ·
+  <a href="https://wa.me/601128730884">WhatsApp</a> ·
   <a href="https://ym321.com">ym321.com</a>
 </p>

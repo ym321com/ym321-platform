@@ -102,7 +102,7 @@ Google / GitHub 搜索 "casino source code laravel"
 | 渠道 | 值 |
 |------|-----|
 | Telegram | @ym321com |
-| WhatsApp | ym321com |
+| WhatsApp | [Chat →](https://wa.me/601128730884)（号码已配置，页面不展示） |
 | 官网 | https://ym321.com |
 
 QQ / 微信待二期。

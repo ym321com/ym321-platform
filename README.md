@@ -18,15 +18,17 @@
   <a href="https://t.me/ym321com">
     <img src="https://img.shields.io/badge/Telegram-@ym321com-0088cc?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram" />
   </a>
-  <a href="https://wa.me/ym321com?text=Hi%2C%20I%27m%20interested%20in%20the%20YM321%20casino%20platform.">
+  <a href="https://wa.me/601128730884?text=Hi%2C%20I%27m%20interested%20in%20the%20YM321%20casino%20platform.">
     <img src="https://img.shields.io/badge/WhatsApp-Contact-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp" />
   </a>
 </p>
 
 <p align="center">
-  <a href="./docs/index.html"><b>📱 Full Screenshot Gallery (GitHub Pages)</b></a>
-  ·
-  <a href="./README.zh-CN.md">中文版</a>
+  <a href="https://ym321.com/en/?utm_source=github&utm_medium=readme"><b>🌐 Official Site: ym321.com</b></a>
+  · <a href="https://ym321.com/en/demo/?utm_source=github&utm_medium=readme">Demo</a>
+  · <a href="https://ym321.com/en/contact/?utm_source=github&utm_medium=readme">Contact</a>
+  · <a href="./docs/index.html"><b>Screenshot Gallery</b></a>
+  · <a href="./README.zh-CN.md">中文版</a>
 </p>
 
 <p align="center">
@@ -148,12 +150,13 @@ See [docs/architecture.md](./docs/architecture.md)
 
 ## Contact — Get Demo & Quote
 
-| Channel | Link |
-|---------|------|
-| **Telegram** | [@ym321com](https://t.me/ym321com) |
-| **WhatsApp** | [Click to chat](https://wa.me/ym321com?text=Hi%2C%20I%27m%20interested%20in%20the%20YM321%20casino%20platform.) |
-| **Website** | [ym321.com/contact](https://ym321.com/en/contact/?utm_source=github&utm_medium=readme) |
-| **Live Demo** | [ym321.com/demo](https://ym321.com/en/demo/?utm_source=github&utm_medium=readme) |
+| Channel | Action |
+|---------|--------|
+| **Official Website** | [ym321.com](https://ym321.com/en/?utm_source=github&utm_medium=readme) · [Demo](https://ym321.com/en/demo/?utm_source=github&utm_medium=readme) · [Contact](https://ym321.com/en/contact/?utm_source=github&utm_medium=readme) |
+| **Telegram** | [@ym321com →](https://t.me/ym321com) |
+| **WhatsApp** | [Chat on WhatsApp →](https://wa.me/601128730884?text=Hi%2C%20I%27m%20interested%20in%20the%20YM321%20platform.) |
+
+> 🌐 **Full product info, live demo & quote:** [https://ym321.com](https://ym321.com/en/?utm_source=github&utm_medium=readme)
 
 <!-- Phase 2: QQ / WeChat -->
 
@@ -196,7 +199,7 @@ Copyright © YM321. **All Rights Reserved.**
 ---
 
 <p align="center">
-  <a href="https://t.me/ym321com">Telegram</a> ·
-  <a href="https://wa.me/ym321com">WhatsApp</a> ·
+  <a href="https://t.me/ym321com">Telegram @ym321com</a> ·
+  <a href="https://wa.me/601128730884">WhatsApp</a> ·
   <a href="https://ym321.com">ym321.com</a>
 </p>

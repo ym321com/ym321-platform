@@ -48,7 +48,7 @@
 Contact us for the full skin catalog and custom VI design:
 
 - **Telegram**: [@ym321com](https://t.me/ym321com)
-- **WhatsApp**: [Chat now](https://wa.me/ym321com)
+- **WhatsApp**: [Chat now](https://wa.me/601128730884)
 - **Website**: [ym321.com/demo](https://ym321.com/en/demo/)
 
 ---

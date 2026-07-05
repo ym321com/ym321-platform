@@ -23,13 +23,24 @@ GitLab（镜像，只读跟随）
 | **外链只指向 GitHub** | 官网、TG、README 均推 GitHub 链接 |
 | **GitLab Description** | 可加：`Mirror of https://github.com/ym321com/ym321-platform` |
 
-### GitLab 设置 Pull Mirror
+### GitLab 同步（无 Pull Mirror 时用双 push）
 
-GitLab → **Settings** → **Repository** → **Mirroring repositories**
+GitLab 免费版通常只有 Push Mirror，**无法**从 GitHub 自动拉取。  
+改用脚本同时推送到 GitHub + GitLab：
 
-- Direction: **Pull from a remote repository**
-- URL: `https://github.com/ym321com/ym321-platform.git`
-- 点击 **Mirror now**
+```powershell
+cd git-showcase
+.\scripts\push-both.ps1
+# 或附带提交信息：
+.\scripts\push-both.ps1 -Message "Update skin previews"
+```
+
+| Remote | 地址 |
+|--------|------|
+| `origin` | https://github.com/ym321com/ym321-platform.git |
+| `gitlab` | https://gitlab.com/ym321com/ym321-platform.git |
+
+脚本会自动添加 `gitlab` remote（若不存在）。**先推 GitHub，再推 GitLab。**
 
 ---
 
@@ -41,8 +52,10 @@ cd git-showcase
 git config user.name "ym321com"
 git config user.email "noreply@ym321.com"
 
-git add .
-git commit -m "你的提交说明"
+# 推荐：双 push（GitHub + GitLab）
+.\scripts\push-both.ps1 -Message "你的提交说明"
+
+# 或仅推 GitHub（已有 commit）
 git push origin main
 ```
 
@@ -129,3 +142,4 @@ git push origin main
 | WhatsApp | https://wa.me/601128730884 |
 | 官网 | https://ym321.com |
 | **主仓库** | https://github.com/ym321com/ym321-platform |
+| **GitLab 镜像** | https://gitlab.com/ym321com/ym321-platform |

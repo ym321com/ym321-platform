@@ -1,27 +1,61 @@
-# GitHub + GitLab 双平台同步与 SEO 设置
+# GitHub 为主 · GitLab 镜像跟随
 
-本目录为 **展示型仓库**（`ym321/ym321-platform`），不含源码。
+本目录为 **展示型仓库**（`ym321com/ym321-platform`），不含源码。
 
-## 1. 初始化并推送
+**README 语言：** 默认中文 [`README.md`](./README.md) · 英文 [`README.en.md`](./README.en.md)
+
+---
+
+## 1. 仓库策略（GitHub 在前）
+
+```
+本地 git-showcase
+    ↓ 只 push
+GitHub（主仓库）https://github.com/ym321com/ym321-platform
+    ↓ Pull Mirror（自动）
+GitLab（镜像，只读跟随）
+```
+
+| 原则 | 说明 |
+|------|------|
+| **只改 GitHub** | 本地 commit 后 `git push origin main` |
+| **GitLab 不单独维护** | 用 Pull Mirror，不要 `git push gitlab` |
+| **外链只指向 GitHub** | 官网、TG、README 均推 GitHub 链接 |
+| **GitLab Description** | 可加：`Mirror of https://github.com/ym321com/ym321-platform` |
+
+### GitLab 设置 Pull Mirror
+
+GitLab → **Settings** → **Repository** → **Mirroring repositories**
+
+- Direction: **Pull from a remote repository**
+- URL: `https://github.com/ym321com/ym321-platform.git`
+- 点击 **Mirror now**
+
+---
+
+## 2. 日常推送
 
 ```powershell
 cd git-showcase
-git init
+
+git config user.name "ym321com"
+git config user.email "noreply@ym321.com"
+
 git add .
-git commit -m "YM321 casino platform showcase — screenshots, keywords, GitHub Pages"
-git branch -M main
-git remote add github git@github.com:ym321/ym321-platform.git
-git remote add gitlab git@gitlab.com:ym321/ym321-platform.git
-git push -u github main
-git push -u gitlab main
+git commit -m "你的提交说明"
+git push origin main
 ```
 
-## 2. GitHub 仓库设置（必做 — 影响搜索曝光）
+> 建议在 **系统 PowerShell / Git Bash** 中 commit，避免 Cursor 注入 `Co-authored-by`。
 
-### Description（About 栏）
+---
+
+## 3. GitHub 仓库设置（必做）
+
+### Description（About 栏，中文为主）
 
 ```
-Casino & sports betting platform source — AG PG EVO SABA, H5 PC App, agent system. iGaming / BC system. 娱乐平台源码
+云码平台 YM321 — 娱乐平台/BC系统源码，AG/PG 30+厂商，H5+PC+App+代理。7天上线 · iGaming casino source · ym321.com
 ```
 
 ### Website
@@ -30,7 +64,7 @@ Casino & sports betting platform source — AG PG EVO SABA, H5 PC App, agent sys
 https://ym321.com
 ```
 
-### Topics（最多 20 个，复制粘贴）
+### Topics（复制粘贴）
 
 ```
 casino
@@ -55,29 +89,15 @@ mobile-casino
 h5-casino
 ```
 
-### Social Preview（Settings → General → Social preview）
+### GitHub Pages
 
-上传 `assets/skins/phone/KY1.png` 或 `assets/logo.png`（竖屏 H5 截图更清晰，勿用 PC 合成图）。
+Settings → Pages → Branch: `main` → Folder: `/docs`
 
-### GitHub Pages（Settings → Pages）
+### Social Preview
 
-| 项 | 值 |
-|----|-----|
-| Source | Deploy from a branch |
-| Branch | `main` → `/docs` |
+上传 `assets/skins/phone/KY1.png` 或 `assets/logo.png`
 
-启用后访问：`https://ym321.github.io/ym321-platform/`（Org 名按实际调整）
-
-Pages 落地页：`docs/index.html` — 含完整皮肤画廊 + TG/WhatsApp CTA + SEO keywords。
-
-### Discussions
-
-开启 Discussions，分类：`💬 Sales Inquiry`
-
-## 3. GitLab 镜像（可选）
-
-GitLab → Settings → Repository → Mirroring → Pull from GitHub  
-URL: `https://github.com/ym321/ym321-platform.git`
+---
 
 ## 4. 更新皮肤图片
 
@@ -85,34 +105,27 @@ URL: `https://github.com/ym321/ym321-platform.git`
 .\scripts\sync-assets.ps1
 git add assets/ docs/assets/
 git commit -m "Update skin preview assets"
-git push github main
+git push origin main
 ```
+
+---
 
 ## 5. 引流链路
 
 ```
-Google / GitHub 搜索 "casino source code laravel"
-  → README / GitHub Pages（含 BC/casino 关键词 + 截图）
-  → 点击 Telegram / WhatsApp
-  → 或进 ym321.com 深度了解
+搜索「娱乐平台源码 / casino source code」
+  → GitHub README（中文默认）/ Pages
+  → Telegram / WhatsApp
+  → ym321.com 深度了解
 ```
+
+---
 
 ## 6. 联系方式
 
 | 渠道 | 值 |
 |------|-----|
 | Telegram | @ym321com |
-| WhatsApp | [Chat →](https://wa.me/601128730884)（号码已配置，页面不展示） |
+| WhatsApp | https://wa.me/601128730884 |
 | 官网 | https://ym321.com |
-
-QQ / 微信待二期。
-
-## 7. 后续可选：多仓库关键词矩阵
-
-| 仓库名 | 瞄准搜索词 |
-|--------|-----------|
-| `ym321-platform` | 主品牌（当前） |
-| `casino-white-label-laravel` | white label casino laravel |
-| `igaming-agent-system` | affiliate / agent system |
-
-内容 80% 复用，README 侧重不同关键词。
+| **主仓库** | https://github.com/ym321com/ym321-platform |
